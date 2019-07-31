@@ -1,0 +1,35 @@
+.user-image-feed {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.div-user-image-feed{
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.errors{
+    color: red;
+}
+
+.img-login{
+    height: 150px;
+    width: 150px;
+}
+
+.like{
+    height: 20px!important;
+    width: 20px!important;
+}
+
+.delete{
+    float: right;
+    height: 40px!important;
+    width: 40px!important;
+}
+
+.main-logo{
+    height: 100px!important;
+    width: 100px!important;
+}
