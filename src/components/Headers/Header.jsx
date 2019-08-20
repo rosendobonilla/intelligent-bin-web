@@ -14,7 +14,7 @@ import org from '../../assets/img/misc/org.png';
 import al from '../../assets/img/misc/al.png';
 import paper from '../../assets/img/misc/paper.png';
 import pet from '../../assets/img/misc/pet.png';
-import glass from '../../assets/img/misc/glass.png';
+import recycle from '../../assets/img/misc/recycle-sign.png';
 
 
 //mobx stuff
@@ -100,12 +100,12 @@ class Header extends React.Component {
             totalProyectosSugerencias++;
           }
         }
-        if(this.props.defaultProjects[x].trashType === "vidrio"){
+        /*if(this.props.defaultProjects[x].trashType === "vidrio"){
           if(this.props.trash.trash[0].vidrio >= this.props.defaultProjects[x].necessaryTrash){
             glassProjects.push(this.props.defaultProjects[x]);
             totalProyectosSugerencias++;
           }
-        }
+        }*/
         if(this.props.defaultProjects[x].trashType === "plastico"){
           if(this.props.trash.trash[0].plastico >= this.props.defaultProjects[x].necessaryTrash){
             petProjects.push(this.props.data.defaultProjects[x]);
@@ -116,10 +116,10 @@ class Header extends React.Component {
         todos["organic"] = organicProjects;
         todos["aluminium"] = alProjects;
         todos["paper"] = paperProjects;
-        todos["glass"] = glassProjects;
+        //todos["glass"] = glassProjects;
         todos["pet"] = petProjects;
 
-        if(organicProjects.length > 0 || alProjects.length > 0 || paperProjects.length > 0 || glassProjects.length > 0 || petProjects.length > 0 ){
+        if(organicProjects.length > 0 || alProjects.length > 0 || paperProjects.length > 0 || petProjects.length > 0 ){
           if(this.state.cardProyectosState === null) {
             this.setState({ cardProyectosState: <Row className="mb-3">
                 <Col lg="12" xl="12">
@@ -167,7 +167,7 @@ class Header extends React.Component {
     let organicProjects = [];
     let alProjects = [];
     let paperProjects = [];
-    let glassProjects = [];
+    //let glassProjects = [];
     let petProjects = [];
     let totalProyectosSugerencias = 0;
     let todos = {
@@ -215,12 +215,12 @@ class Header extends React.Component {
             totalProyectosSugerencias++;
           }
         }
-        if(this.props.defaultProjects[x].trashType === "vidrio"){
+        /*if(this.props.defaultProjects[x].trashType === "vidrio"){
           if(this.props.trash.trash[0].vidrio >= this.props.defaultProjects[x].necessaryTrash){
             glassProjects.push(this.props.defaultProjects[x]);
             totalProyectosSugerencias++;
           }
-        }
+        }*/
         if(this.props.defaultProjects[x].trashType === "plastico"){
           if(this.props.trash.trash[0].plastico >= this.props.defaultProjects[x].necessaryTrash){
             petProjects.push(this.props.data.defaultProjects[x]);
@@ -231,13 +231,13 @@ class Header extends React.Component {
         todos["organic"] = organicProjects;
         todos["aluminium"] = alProjects;
         todos["paper"] = paperProjects;
-        todos["glass"] = glassProjects;
+        //todos["glass"] = glassProjects;
         todos["pet"] = petProjects;
 
         //console.log("Default projects in header updated actual: " + this.props.defaultProjects[0].necessaryTrash);
         //console.log("Default projects in header updated prevProps directly: " + prevProps.defaultProjects[0].necessaryTrash);
 
-        if(organicProjects.length > 0 || alProjects.length > 0 || paperProjects.length > 0 || glassProjects.length > 0 || petProjects.length > 0 ){
+        if(organicProjects.length > 0 || alProjects.length > 0 || paperProjects.length > 0 || petProjects.length > 0 ){
           if(this.state.cardProyectosState === null || prevProps.data.defaultProjects !== this.props.defaultProjects) {
 
             this.setState({ cardProyectosState: <Row className="mb-3">
@@ -294,8 +294,8 @@ class Header extends React.Component {
                   // and lastly, we render them using the map function
                   this.props.trash.trash.map((prop, key) => {
                       return (
-                          <Row key={key}>
-                            <Col lg="6" xl="2" >
+                          <Row key={key} xl="12">
+                            <Col lg="2" xl="2" >
                               <Card className="card-stats mb-4 mb-xl-0">
                                 <CardBody>
                                   <Row>
@@ -320,7 +320,7 @@ class Header extends React.Component {
                                 </CardBody>
                               </Card>
                             </Col>
-                            <Col lg="6" xl="2">
+                            <Col lg="2" xl="2" >
                               <Card className="card-stats mb-4 mb-xl-0">
                                 <CardBody>
                                   <Row>
@@ -344,7 +344,7 @@ class Header extends React.Component {
                                 </CardBody>
                               </Card>
                             </Col>
-                            <Col lg="6" xl="2">
+                            <Col lg="2" xl="2" >
                               <Card className="card-stats mb-4 mb-xl-0">
                                 <CardBody>
                                   <Row>
@@ -367,7 +367,7 @@ class Header extends React.Component {
                                 </CardBody>
                               </Card>
                             </Col>
-                            <Col lg="6" xl="2">
+                            <Col lg="2" xl="2" >
                               <Card className="card-stats mb-4 mb-xl-0">
                                 <CardBody>
                                   <Row>
@@ -393,7 +393,7 @@ class Header extends React.Component {
                               </Card>
                             </Col>
 
-                            <Col lg="6" xl="2">
+                            <Col lg="2" xl="2" >
                               <Card className="card-stats mb-4 mb-xl-0">
                                 <CardBody>
                                   <Row>
@@ -419,7 +419,7 @@ class Header extends React.Component {
                               </Card>
                             </Col>
 
-                            <Col lg="6" xl="2">
+                            {/*<Col lg="6" xl="2">
                               <Card className="card-stats mb-4 mb-xl-0">
                                 <CardBody>
                                   <Row>
@@ -443,8 +443,40 @@ class Header extends React.Component {
 
                                 </CardBody>
                               </Card>
-                            </Col>
+                            </Col>*/}
 
+
+                            <Col lg="2" xl="2" >
+                              <Card className="card-stats mb-4 mb-xl-0 bg-secondary">
+                                <CardBody>
+                                  <Row>
+                                    <div className="col">
+                                      <CardTitle
+
+                                          tag="h5"
+                                          className="text-uppercase text-muted mb-0"
+                                      >
+                                        Vamos
+                                      </CardTitle>
+                                      <span className="display-4 font-weight-bold mb-0">
+                                        ¡Recicla!
+                          </span>
+                                    </div>
+                                    <Col className="col-auto">
+                                        <span className="display-5 mb-0">
+                                        Cuida el planeta
+                                        </span>
+                                      <br/>
+                                      <div className="icon icon-shape bg-info text-white rounded-circle shadow">
+                                        <img src={recycle} alt="vidrio"/>
+
+                                      </div>
+                                    </Col>
+                                  </Row>
+
+                                </CardBody>
+                              </Card>
+                            </Col>
 
                           </Row>
                       );

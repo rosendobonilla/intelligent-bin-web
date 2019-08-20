@@ -109,7 +109,7 @@ class Profile extends React.Component {
                   </Col>
                 </Row>
                 <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                  <div className="d-flex justify-content-between">
+                  {/*<div className="d-flex justify-content-between">
                     <Button
                       className="mr-4"
                       color="info"
@@ -128,7 +128,7 @@ class Profile extends React.Component {
                     >
                       Mensaje
                     </Button>
-                  </div>
+                  </div>*/}
                 </CardHeader>
                 <CardBody className="pt-0 pt-md-4">
                   <Row>
@@ -160,7 +160,7 @@ class Profile extends React.Component {
                       </div>
                     </div>
 
-                    <div className="col">
+                    {/*<div className="col">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
                           <span className="heading">22</span>
@@ -175,7 +175,7 @@ class Profile extends React.Component {
                           <span className="description">Comentarios</span>
                         </div>
                       </div>
-                    </div>
+                    </div>*/}
                   </Row>
                   <div className="text-center">
                     <h3>

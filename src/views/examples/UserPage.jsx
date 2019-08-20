@@ -110,7 +110,7 @@ class UserPage extends React.Component {
                   </Col>
                 </Row>
                 <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                  <div className="d-flex justify-content-between">
+                  {/*<div className="d-flex justify-content-between">
                     <Button
                       className="mr-4"
                       color="info"
@@ -129,10 +129,10 @@ class UserPage extends React.Component {
                     >
                       Mensaje
                     </Button>
-                  </div>
+                  </div>*/}
                 </CardHeader>
                 <CardBody className="pt-0 pt-md-4">
-                  <Row>
+                  {/*<Row>
                     <input className="" type="file" hidden="hidden" id="imageInput" onChange={this.handleImageChange}/>
 
 
@@ -152,8 +152,11 @@ class UserPage extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </Row>
+                  </Row>*/}
                   <div className="text-center">
+                    <br/>
+                    <br/>
+                    <br/>
                     <h3>
                       @{this.state.profile.userHandle}
                       {/*<span className="font-weight-light">, 27</span>*/}

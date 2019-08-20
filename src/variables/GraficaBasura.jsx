@@ -33,11 +33,11 @@ class GraficaBasura extends Component{
 
     componentDidMount() {
         const data = {
-                labels: ["Organica", "Plástico", "Papel", "Aluminio", "Vidrio"],
+                labels: ["Organica", "Plástico", "Papel", "Aluminio"],
                 datasets: [
                     {
                         label: "Cantidad",
-                        data: [this.props.datos.organica, this.props.datos.plastico, this.props.datos.papel, this.props.datos.aluminio, this.props.datos.vidrio]
+                        data: [this.props.datos.organica, this.props.datos.plastico, this.props.datos.papel, this.props.datos.aluminio]
                     }
                 ]
         };
@@ -48,11 +48,11 @@ class GraficaBasura extends Component{
     componentWillReceiveProps(nextProps) {
         //console.log("Datos will receive: " + nextProps.datos.organica);
         const data = {
-            labels: ["Organica", "Plástico", "Papel", "Aluminio", "Vidrio"],
+            labels: ["Organica", "Plástico", "Papel", "Aluminio"],
             datasets: [
                 {
                     label: "Cantidad",
-                    data: [nextProps.datos.organica, nextProps.datos.plastico, nextProps.datos.papel, nextProps.datos.aluminio, nextProps.datos.vidrio]
+                    data: [nextProps.datos.organica, nextProps.datos.plastico, nextProps.datos.papel, nextProps.datos.aluminio]
                 }
             ]
         };

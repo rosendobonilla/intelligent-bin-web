@@ -27,7 +27,7 @@ const getStatsTrash = () => (dispatch) => {
                         organica: doc.data().organica,
                         aluminio: doc.data().aluminio,
                         papel: doc.data().papel,
-                        vidrio: doc.data().vidrio,
+                        //vidrio: doc.data().vidrio,
                         plastico: doc.data().plastico,
                         total: doc.data().total
                     });
