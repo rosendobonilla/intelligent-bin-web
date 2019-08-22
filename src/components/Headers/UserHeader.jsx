@@ -16,21 +16,21 @@ class UserHeader extends React.Component {
           style={{
             minHeight: "600px",
             backgroundImage:
-              "url(" + require("assets/img/theme/profile-cover.jpg") + ")",
+              "url(" + require("assets/img/theme/earth.jpg") + ")",
             backgroundSize: "cover",
             backgroundPosition: "center top"
           }}
         >
           {/* Mask */}
-          <span className="mask bg-gradient-default opacity-8" />
+          <span className="mask bg-gradient-default opacity-7" />
           {/* Header container */}
           <Container className="d-flex align-items-center" fluid>
             <Row>
               <Col lg="7" md="10">
                 <h1 className="display-2 text-white">Hola {userHandle}</h1>
                 <p className="text-white mt-0 mb-5">
-                  Esta es tu página de perfil. Puedes actualizar tus datos
-                  o ver un resumen de tu actividad en el sitio.
+                  Esta es tu página de perfil. Aquí puedes ver tus datos
+                  o actualizarlos.
                 </p>
                 {/*<Button
                   color="info"

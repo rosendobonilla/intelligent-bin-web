@@ -242,7 +242,7 @@ class Profile extends React.Component {
                               className="form-control-alternative"
                               id="input-username"
                               disabled={true}
-                              placeholder={credentials.userHandle + " -No editable-"}
+                              placeholder={credentials.userHandle + " - No editable"}
                               type="text"
                             />
                           </FormGroup>
